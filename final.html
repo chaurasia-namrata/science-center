@@ -1,0 +1,333 @@
+
+<html>
+
+<head>
+   <title>SCIENCE MUSEUM</title>
+<style>
+
+/*HEADING*/
+.header
+   {
+	height:145px;
+    width:1330px;
+	margin:auto auto 4px auto;
+	text-align:center;
+	background-color:black;
+	font-size:80;
+	color:#ffff66;
+	text-bottom:120px;
+	line-height:120px;
+
+	}	
+#main_container{
+	width:1330px;
+	margin:auto;
+	}
+
+/*CONTENT*/
+.page_content
+   {  
+	height:2200px;
+	width:1230px;
+	margin:auto auto 4px auto;
+	text-align:center;
+	background: url('main/bg.jpg');
+	padding:50px;
+	font-size:35;
+   }	  
+.slcontent
+   {  
+		margin:auto auto 4px auto;
+		text-align:center;
+		background-color:indigo;
+		line-height:400px;
+		height:700px;
+	   width:1001px;
+   }
+/*for making nav menu show upper to slideshow*/ 
+#iefix{
+	position: relative;
+	z-index:1000;
+	}
+
+	
+/*NAVIGATION MENU*/
+.nav{
+	height:120px;
+	width:1330px;
+	margin:auto auto 4px auto;
+	text-align:center;
+	-moz-box-shadow: 0 0 4px #ccc;
+	-webkit-box-shadow: 0 0 4px #ccc;
+	box-shadow: 0 0 4px #ccc;
+	background-color: black;
+	color:white;
+	font-size:30;
+	
+	}
+div ul{
+	display:inline-block;
+	}	
+ul{
+	margin:0px;
+	padding:0px;
+	list-style: none;
+	}
+ul a{
+	display:block;
+	width: 210px;
+	height:120px;	
+	}	
+ul li{
+	outline:1px;
+	margin-right:4px;
+	float: left;
+	width: 210px;
+	height:120px;
+	line-height:40px;
+	text-align:center;
+	border:1px solid white;
+	background-color:black;
+	opacity:.95;
+	
+	}	
+ul li a{
+	text-decoration:none;
+	color:azure;
+	display:block;
+	}	
+ul li a:hover{
+	background-color:navy;
+	}	
+ul ul {
+		display: none;
+		position: relative;
+		}	
+ul ul a{
+	display block;
+	width: 176px;
+	height:80px;
+	}
+ul li ul li{
+	outline:1px;
+	margin-right:4px;
+	float: left;
+	width: 180px;
+	height:80px;
+	line-height:40px;
+	text-align:center;
+	border:1px solid white;
+	}
+ul li ul li a{
+	text-decoration:none;
+	color:plum;
+	display:block;
+	}
+ul li:hover > ul {
+		display: block;
+		}
+		
+ul ul ul{
+	margin-left:180px;
+	top:-80px;
+	}
+ul li ul li ul li a{
+	text-decoration:none;
+	color:mistyrose;
+	display:block;
+	}
+	
+.footer{
+	background-color:black;
+	width:1330px;
+	height:800px;
+	text-align: center;
+	font-size:50;
+	margin:auto auto 4px auto;
+	text-bottom:120px;
+	line-height:120px;
+	text-bottom:120px;
+		font-family:cursive;
+	}
+div.social{
+	float: left;
+	margin-top:30px;
+	}
+a.social{
+	margin-left:53px;
+	margin-right:53px;
+	}
+	
+/*SLIDESHOW*/
+.slider{
+	margin:0 auto;
+	width:1000px;
+	overflow:hidden;
+	height:1000px;
+	}
+.slider figure div{
+	float:left;
+	width:20%;
+	}
+.slider figure img{
+	width:100%;
+	float:left;
+	}
+.slider figure{
+	position:relative;
+	width:500%;
+	margin:0px;
+	left:0;
+	animation: 20s sldshw infinite;
+	}
+@keyframes sldshw{
+	0%{
+		left:0%;
+	}	
+	10%{
+		left:0%;
+	}
+	12%{
+		left:-100%;
+	}	
+	22%{
+		left:-100%;
+	}	
+	24%{
+		left:-200%;
+	}	
+	34%{
+		left:-200%;
+	}
+	36%{
+		left:-300%;
+	}
+	46%{
+		left:-300%;
+	}
+	48%{
+		left:-400%;
+	}
+	58%{
+		left:-400%;
+	}
+	60%{
+		left:-300%;
+	}	
+	70%{
+		left:-300%;
+	}	
+	72%{
+		left:-200%;
+	}	
+	82%{
+		left:-200%;
+	}	
+	84%{
+		left:-100%;
+	}	
+	94%{
+		left:-100%;
+	}	
+	96%{
+		left:-0%;
+	}
+
+	
+</style>
+</head>
+
+<body>
+     
+     <div class="header"><b><u>
+           SCIENCE MUSEUM</b></u>
+     </div>
+
+	 <div id="main_container">
+		<div id="iefix">
+		<div class="nav">
+			<div id="menu" >
+			<ul>
+				<li><a href="final.html">HOME</a></li>
+				<li><a href="main/history.html">HISTORY</a></li>
+				<li><a href="#">WORLD</a>
+					<ul class="sub1">
+						<li><a href="#">USA</a>
+							<ul class="sub2">
+								<li><a href="main/inside/museum of minnesota.html">Minnesota</a></li>
+								<li><a href="main/inside/california.html">California</a></li>
+							</ul>
+						</li>
+						<li><a href="main/inside/science museum kolkata india.html">INDIA</a></li>
+						<li><a href="#">CHINA</a>
+							<ul class="sub2">
+								<li><a href="main/inside/Shanghai Science & Tech Museum(4).html">Shanghai</a></li>
+								<li><a href="main/inside/hong kong space museum.html">Hongkong</a></li>
+							</ul>
+						</li>
+						<li><a href="main/inside/Natural History Museum.html">ENGLAND</a></li>
+						<li><a href="main/inside/genocide(10).html">SOUTH AFRICA</a></li>
+						<li><a href="main/inside/tokyo.html">JAPAN</a></li>
+						<li><a href="main/inside/nikola musem.html">SERBIA</a></li>
+						<li><a href="main/inside/denmark(7).html">DENMARK</a></li>
+						</li>
+					</ul>
+				</li>
+				<li><a href="main/mdrnscmu.html">MODERN SCIENCE MUSEUM</a></li>
+				<li><a href="main/sccntr.html">SCIENCE CENTER</a></li>
+				<li><a href="main/form.html"><font color="azure">FEEDBACK</a></li>
+			</ul>		
+			</div>
+		</div>
+		</div>
+	</div>
+	
+	<div class="page_content">
+		<div class="slider">
+		<figure>
+			<div class="slide"><img src="main/m1.jpg" alt=""></div>
+			<div class="slide"><img src="main/m2.jpg" alt=""></div>
+			<div class="slide"><img src="main/m3.jpg" alt=""></div>
+			<div class="slide"><img src="main/m4.jpg" alt=""></div>
+			<div class="slide"><img src="main/m5.jpg" alt=""></div>
+		</figure>
+		</div>
+		
+		A science museum is a museum devoted primarily to science.
+ Older science museums tended to concentrate on static displays 
+ of objects related to natural history, paleontology, geology,
+ industry and industrial machinery, etc. Modern trends in
+ museology have broadened the range of subject matter and
+ introduced many interactive exhibits. Many if not most modern 
+ science museums - which increasingly refer to themselves as
+ science centers or "discovery centers" - also emphasize
+ technology, and are therefore also technology museums.
+ <br><br>
+The mission statements of science centers and modern museums
+ vary, but they are united in being places that make science 
+ accessible and encourage the excitement of discovery. They are 
+ an integral and dynamic part of the learning environment,
+ promoting exploration from the first "Eureka!" moment to today's
+ cutting-edge research.<br><br><br>
+ <a><img src="main/a1.jpg"></a>
+     </div>
+	  
+	<div class="footer">
+	<center>FOLLOW US....</center>
+	<div class="social">
+	<a class="social facebook" href="https://www.facebook.com/"><img src="main/fb.png"></a>
+	<a class="social twitter" href="https://twitter.com"><img src="main/twitter.png"></a>
+	<a class="social tumblr" href="https://www.tumblr.com/"><img src="main/tumblr.png"></a>
+	<a class="social instgram" href="https://www.instagram.com/?hl=en"><img src="main/insta.jpg"></a>
+	<a class="social youtube" href="https://www.youtube.com/"><img src="main/youtube.png"></a>
+	<a class="social flickr" href="https://www.flickr.com/"><img src="main/flickr.png"></a>
+	<a class="reddit" href="https://www.reddit.com/"><img src="main/reddit.png"></a>
+	</div>
+	<font size="50">THANKS FOR VISITING ! <br>
+	PLEASE VISIT AGAIN !<br></font>
+	DEVEOLOPED BY<br>
+	</div>	
+	  
+	  
+ </body>
+ </html>
