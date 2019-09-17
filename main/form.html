@@ -1,0 +1,83 @@
+<html>
+<head><h2><u><center>FEEDBACK FORM</center></u></h2></head>
+<style>
+body {
+        background-color:black;
+		color:cyan;
+		font-size:38;
+} 
+table{
+	font-size: 20;
+color: #ffff99;	}
+ 
+</style>
+<script type="text/javascript">
+	function  validateform()
+	{
+var n=document.forms["myform"]["fn"].value;
+var l=document.forms["myform"]["ln"].value;
+var e=document.forms["myform"]["email"].value;
+var c=document.forms["myform"]["cntry"].value;
+var g=document.forms["myform"]["gender"].value;
+var f=document.forms["myform"]["feed"].value;
+if(!n)
+{
+	alert("Please enter the Firstname");
+	document.forms["myform"]["fn"].focus();
+	return false;
+}
+if(!l)
+{
+	alert("Please enter the Lastname");
+	document.forms["myform"]["ln"].focus();
+	return false;
+}
+	
+if(!e)
+        {
+        	alert("Please enter the Email");
+	document.forms["myform"]["email"].focus();
+	return false;
+}
+if(!c)
+{
+	alert("Please enter your Country");
+	document.forms["myform"]["cntry"].focus();
+	return false;
+}
+if(!g)
+{
+	alert("Please enter your Gender");
+	document.forms["myform"]["gender"].focus();
+	return false;
+}
+if(!f)
+{
+	alert("Please enter your feedback");
+	document.forms["myform"]["feed"].focus();
+	return false;
+}
+    else
+alert("Thank you " + n + " for your valuable feedback !");
+}
+</script>
+<title>form</title>
+<body>
+<form name="myform">
+<table align="center" cellpadding=8>
+<tr><td>First name:</td><td><input type="text" name="fn"><br></td></tr>
+<tr><td>Last name:</td><td><input type="text" name="ln"><br></td></tr>
+<tr><td>Email:</td><td><input type="email" name="email"><br></td></tr>
+<tr><td>Country:</td><td><input type="text" name="cntry"><br></td></tr></td></tr>
+<tr><td>Gender:</td><td><input type="radio" name="gender" name="male"> Male
+  <input type="radio" name="gender" name="female"> Female
+   <br></td></tr>   
+<tr><td>Feedback:</td><td><input type="text" COLS="40" ROWS="7" name="feed"><br></td></tr></td></tr>
+
+    
+   <tr><td> <br> <br><center><input type="submit" name="Submit" value="Submit" onclick="validateform()" >
+   <input type="reset" name="reset" value="Reset"></center></td></tr>
+   </table>
+   </form>
+   </body>
+   </html>

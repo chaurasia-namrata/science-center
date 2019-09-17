@@ -1,0 +1,313 @@
+<html>
+<head>
+
+<style>
+.header
+{
+	background-color:black;
+	text-align:center;
+	height:450;
+	width:100%;
+}
+
+
+.content
+{
+	background:red;
+	text-align:center;
+	animation-name: change;
+	animation-duration: 60s;
+}
+
+@keyframes change {
+    from {background-color:red;}
+    to {background-color:green;}
+		}
+
+<!-- SO MUCH TO EXPLORE --> 
+
+
+.container {
+    position: relative;
+    text-align: center;
+    color: white;
+    font-size:large;
+}
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.menu{
+	width:100%;
+	background-color:orange;
+	float:left;
+	font-size:20;
+	height:380;
+}
+
+.submenu
+{
+	background-color:yellow;
+	width:28%;
+	height:300;
+	float:left;
+	text-align:left;
+}
+
+.submenu1
+{
+	background-color:lightgreen;
+	width:22%;
+	height:300;
+	float:left;
+	text-align:left;
+}
+
+/* Popup container */
+.popup {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+}
+
+/* The actual popup (appears on top) */
+.popup .popuptext {
+    visibility: hidden;
+    width: 0px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 8px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -80px;
+}
+
+/* Popup arrow */
+.popup .popuptext::after {
+    content:("");
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+}
+
+/* Toggle this class - hide and show the popup */
+.popup .show {
+    visibility: visible;
+   
+   }
+
+.footer {
+    text-align: center;
+    color: blue;
+    background-color:greenyellow;
+    width: 100%;
+}
+
+h3 {
+    font-size: 250%;
+}
+
+
+
+
+	
+</style>
+</head>
+
+<body>
+
+                                                                   <!-- HEADER -->
+
+<div class="header">
+<p align="left">
+
+<img src="m9.logo.png" style="float:left;width:390px;height:450px;">
+
+
+
+	<!-- REACH -->
+<img src="m9.jpg" width="940px" height="450px" hspace="0" usemap="#workmap">
+<map name="workmap">
+  <area shape="circle" coords="290,172,333,250" alt="Venus" href="#reach">
+</map>
+
+</div>
+
+
+
+                                                                   <!-- CONTENT -->
+
+<!-- SO MUCH TO EXPLORE -->
+
+
+
+<div class="content">
+<h1 id="explore"><center><font color="yellow">SO MUCH TO EXPLORE</font></center></h1>
+
+<div class="container">
+<marquee direction="up">
+
+<center>
+<h3>	
+<table cellspacing="10px" cellpadding="10px" style="font-size:30px;" >
+
+<tr>
+<td>16.11.2017
+<td>7:00pm-9:00pm
+<td>Astronomy Course "Astrophotographic Techniques"
+</tr>
+
+<tr> 
+<td>19.11.2017
+<td>2:30pm-5:00pm
+<td>Lecture Series "Celebrating Physics: A series of public lectures"
+</tr>
+
+<tr> 
+<td>21.11.2017
+<td>7:00pm-8:30pm
+<td>Lecture Series "Greek Mythology"
+</tr>
+
+<tr> 
+<td>22.11.2017
+<td>7:30pm-9:00pm
+<td>Astronomical Observation "Astronomy Happy Hour"
+</tr>
+
+<tr> 
+<td>23.11.2017
+<td>7:00pm-9:00pm
+<td>Astronomy Course "Astrophotographic Techniques"
+</tr>
+
+<tr> 
+<td>27.11.2017
+<td>7:00pm-8:30pm
+<td>Lecture Series "Half Century of Mars Exploration"
+</tr>
+
+<tr> 
+<td>28.11.2017
+<td>7:00pm-8:30pm
+<td>Lecture Series "Greek Mythology"
+</tr>
+
+<tr> 
+<td>30.11.2017
+<td>7:00pm-9:00pm
+<td>Astronomy Course "Astrophotographic Techniques"
+</tr>
+
+</table>
+</h3>
+</center>
+</marquee>
+	</div>
+
+</div>
+
+
+<div class="menu">
+
+<center>
+<h3 id="chance"><font color="red" size="6px"><u><i>GIVE US A  CHANCE!</u>!</i></font></h3>
+
+<div class="submenu">
+
+<div class="popup" onclick="myFunction()">
+<h2>
+Mobile App "Star Hoppers" </h2> 
+ 
+<p>Star Hoppers is the latest mobile app developed by the Hong Kong Space Museum. It integrates the Chinese and Western star charts with information of astronomical events and related activities while telling the stories of constellations to you with its audio recordings.<br> Can you spot the errors?</p>
+<marquee> <span class="popuptext" id="myPopup"><img src="m9s1.jpg"><img src="m9s2.jpg"><img src="m9s3.jpg"><img src="m9s4.jpg"></span></marquee>
+</div>
+</div>
+
+<div class="submenu1">
+<div class="popup" onclick="myFunction()">
+
+<h2>
+Exhibit Renewal </h2> 
+
+<p>Temporary Closure of Exhibition Halls for Exhibit Renewal Project</p>
+ <span class="popuptext" id="myPopup"><img src="m5.7.jpg"></span>
+
+</div>
+</div>
+
+<div class="submenu">
+
+
+<div class="popup" onclick="myFunction()">
+<h2>Special Exhibition "The Shaw Prize in Astronomy 2017" </h2> 
+
+<p>Exhibition is now staged in the Space Museum foyer</p>
+ <span class="popuptext" id="myPopup"><img src="m5.5.jpg"></span>
+
+</div>
+
+</div>
+
+<div class="submenu1">
+
+
+<div class="popup" onclick="myFunction()">
+<h2>Astronomical and Meteorological Knowledge in Stargazing Top </h2> 
+
+<p>The Geminid meteor shower is the most spectacular meteor shower in 2017. The peak is expected to occur at about 2:30 p.m. on 14th December. </p>
+ <span class="popuptext" id="myPopup"><img src="m5.5.jpg"></span>
+
+</div>
+
+</div>
+
+<script>
+
+function myFunction() {
+    var popup = document.getElementById("myPopup");
+    popup.classList.toggle("show");
+}
+</script>
+
+
+
+</div>
+
+
+                                                                  <!-- FOOTER -->
+
+<div class="footer">
+
+<font color="purple" size="5px">
+==><h3 id="reach"> <a href="https://www.google.co.in/maps?dcr=0&biw=1366&bih=652&q=natural+history+museum+london&um=1&ie=UTF-8&sa=X&ved=0ahUKEwj4pMWuo7nXAhUKO48KHbpoBaEQ_AUICigB"> HOW TO REACH??  </a></h3><==
+<br>
+<p><b><h4><u>ADDRESS</u>:</h4></b> Cromwell Rd, Kensington, London SW7 5BD, UK</p>
+</font>
+<br>
+<font color="red" size="10px">BE AN ALL-ROUNDER...</font>
+<br>
+
+
+</div> 
+
+
+
+
+
+
+
+
+
+</body>
+</html>
